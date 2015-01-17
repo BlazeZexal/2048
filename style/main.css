@@ -2,12 +2,13 @@
 html, body {
   margin: 0;
   padding: 0;
-  background: #faf8ef;
+  background: red;
   color: #776e65;
   font-family: "Clear Sans", "Helvetica Neue", Arial, sans-serif;
   font-size: 18px; }
 
 body {
+   background-image: url("http://upload.wikimedia.org/wikipedia/commons/5/56/Hammer_sickle_clean.png");
   margin: 80px 0; }
 
 input {
@@ -16,7 +17,7 @@ input {
   border-radius: 3px;
   padding: 0 20px;
   text-decoration: none;
-  color: #f9f6f2;
+  color: black;
   height: 40px;
   line-height: 42px;
   cursor: pointer;
@@ -42,6 +43,14 @@ input {
     input[type="text"]:-ms-input-placeholder, input[type="email"]:-ms-input-placeholder {
       color: #9d948c; }
 
+.end-container {
+  background-color: #bbb;
+  border-radius: 3px;
+  padding: 10px;
+  margin-top: 50px;
+  color: white;
+}
+
 .heading:after {
   content: "";
   display: block;
@@ -50,6 +59,7 @@ input {
 h1.title {
   font-size: 80px;
   font-weight: bold;
+  color: black;
   margin: 0;
   display: block;
   float: left; }
@@ -85,7 +95,7 @@ h1.title {
 .score-container, .best-container {
   position: relative;
   display: inline-block;
-  background: #bbada0;
+  background: #bbb;
   padding: 15px 25px;
   font-size: 25px;
   height: 25px;
@@ -129,16 +139,18 @@ h1.title {
 
 p {
   margin-top: 0;
+  color: black;
   margin-bottom: 10px;
   line-height: 1.65; }
 
 a {
-  color: #776e65;
+  color: blue;
   font-weight: bold;
   text-decoration: underline;
   cursor: pointer; }
 
 strong.important {
+  color: black;
   text-transform: uppercase; }
 
 hr {
@@ -199,7 +211,7 @@ hr {
   -ms-user-select: none;
   -ms-touch-action: none;
   touch-action: none;
-  background: #bbada0;
+  background: yellow;
   border-radius: 6px;
   width: 500px;
   height: 500px;
@@ -282,6 +294,7 @@ hr {
 
 .grid-container {
   position: absolute;
+  background-color: yellow;
   z-index: 1; }
 
 .grid-row {
@@ -299,7 +312,7 @@ hr {
   margin-right: 15px;
   float: left;
   border-radius: 3px;
-  background: rgba(238, 228, 218, 0.35); }
+  background-color: red; }
   .grid-cell:last-child {
     margin-right: 0; }
 
@@ -393,6 +406,11 @@ hr {
     z-index: 10;
     font-size: 55px;
     color: transparent; }
+  @media screen and (max-width: 520px) {
+    .tile .tile-inner {
+      background-size: 58px 58px
+    }
+  }
   .tile.tile-2 .tile-inner {
     background-size: 107px 107px;
     background-image: url("../tile-pics/Putin-2.jpg"); 
@@ -574,7 +592,8 @@ hr {
   clear: both; }
 
 .game-intro {
-  float: left;
+  color: black;
+  text-align: center;
   line-height: 42px;
   margin-bottom: 0; }
 
@@ -585,7 +604,7 @@ hr {
   padding: 0 20px;
   text-decoration: none;
   color: #f9f6f2;
-  height: 40px;
+  height: 80px;
   line-height: 42px;
   cursor: pointer;
   display: block;
@@ -593,7 +612,8 @@ hr {
   float: right; }
 
 .game-explanation {
-  margin-top: 50px; }
+  color: black;
+}
 
 .sharing {
   margin-top: 20px;
@@ -612,6 +632,7 @@ hr {
 
   h1.title {
     font-size: 27px;
+    color: black;
     margin-top: 15px; }
 
   .container {
@@ -835,6 +856,7 @@ hr {
     padding-top: 0; }
     .game-message p {
       font-size: 30px !important;
+      color: black !important;
       height: 30px !important;
       line-height: 30px !important;
       margin-top: 32% !important;
